@@ -1,6 +1,6 @@
 # CLIProxyAPI Changelog
 
-## [Updated Icon, Compact Summaries and Screenshots] - 2026-10-20
+## [Updated Icon, Compact Summaries and Screenshots] - {PR_MERGE_DATE}
 
 - Replace the icon with the supplied square artwork and rounded transparent corners.
 - Shorten provider summaries to keep the weekly quota on one line.
