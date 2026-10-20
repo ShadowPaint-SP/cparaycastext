@@ -500,7 +500,7 @@ function limitAccessories(
   return accessories;
 }
 
-/** e.g. "4 accounts · Weekly 123% left of 300%": remaining weekly capacity summed across accounts with data. */
+/** e.g. "4 accounts · W 123% / 300%": remaining weekly capacity summed across accounts with data. */
 function sectionSubtitle(accounts: AuthFile[], quotas: Record<string, QuotaResult> | undefined): string {
   const count = `${accounts.length} ${accounts.length === 1 ? "account" : "accounts"}`;
   const weekly = accounts
@@ -509,7 +509,7 @@ function sectionSubtitle(accounts: AuthFile[], quotas: Record<string, QuotaResul
     .filter((v): v is number => v !== null);
   if (weekly.length === 0) return count;
   const left = Math.round(weekly.reduce((sum, value) => sum + value, 0));
-  return `${count} · Weekly ${left}% left of ${weekly.length * 100}%`;
+  return `${count} · W ${left}% / ${weekly.length * 100}%`;
 }
 
 /** Provider logos from the Management Center; OpenAI's is monochrome, so it's tinted to the text color. */

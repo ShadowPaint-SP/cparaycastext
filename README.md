@@ -46,3 +46,7 @@ Switch views from the search bar dropdown, or cycle through them with ⌘D:
 | Enable/Disable Account | ⌘⇧E |
 
 "Use Rate-Limit Reset" spends one of the account's upstream reset credits or grants, and you can't get it back. "Clear Cooldown" only clears CLIProxyAPI's local routing cooldown and leaves upstream limits alone.
+
+## Screenshots
+
+The Store screenshots in `metadata` show Details, Limits and Overview using sample accounts and quota values.
